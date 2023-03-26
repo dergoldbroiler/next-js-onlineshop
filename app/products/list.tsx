@@ -1,22 +1,10 @@
-'use client'
 import Product from './product';
-import { useState, useEffect } from 'react';
 
+const List = async () => {
 
-const List = () => {
-
-    const [products, setProducts] = useState<any>([]);
-
-    useEffect(() => {
-        fetch('http://localhost:3000/api/products').then(
-            data => data.json()
-        ).then(
-            data => setProducts(data)
-        )
-    },[products]);
-
-  //await fetch('../api/products/');
-    
+    const fetch_host = `${process.env.FETCH_HOST}/api/products`
+    const data = await fetch(fetch_host);
+    const products = await data.json()
 
 
     return (
