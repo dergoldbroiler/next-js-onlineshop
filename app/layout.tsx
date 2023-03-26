@@ -1,4 +1,4 @@
-import './globals.css'
+
 import '../styles/main.scss';
 
 import { Rootlayout } from './types/rootlayout'
