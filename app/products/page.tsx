@@ -13,7 +13,7 @@ const Products = async () => {
   
             <div className="row">
               
-              {/* @ts-expect-error Server Component */}
+   
               <List />
   
             </div>
