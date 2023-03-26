@@ -4,7 +4,7 @@ const Products = async () => {
     return (
         <section className="jumbotron text-center h-100">
         <div className="container">
-          <h1 className="jumbotron-heading m-5">Products</h1>
+          <h1 className="jumbotron-heading m-5">Produkte</h1>
          
         </div>
   
@@ -13,7 +13,7 @@ const Products = async () => {
   
             <div className="row">
               
-   
+              {/* @ts-expect-error Server Component */}
               <List />
   
             </div>
