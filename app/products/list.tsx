@@ -1,7 +1,7 @@
 import Product from './product';
 
 const List = async () => {
-    const data = await fetch('/api/products');
+    const data = await fetch('http://0.0.0.0:3000//api/products');
     const products = await data.json()
 
     return (
