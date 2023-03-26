@@ -1,0 +1,15 @@
+@import './hamburgermenu';
+@import './navigation';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+/* BS Vars */
+$border-radius: 0;
+$btn-border-radius : 0;
+$card-border-radius: 0;
+$card-inner-border-radius:0;
+
+/* BS Rewrites */
+.card-img-top, .card {
+    border:none !important;
+    border-radius:0 !important
+}

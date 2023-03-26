@@ -1,6 +1,10 @@
 import './globals.css'
+import '../styles/main.scss';
+
 import { Rootlayout } from './types/rootlayout'
-import 'bootstrap/dist/css/bootstrap.css'
+import Header from './header/header'
+import Navigation from "./header/navigation";
+
 
 
 export const metadata = {
@@ -11,7 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }: Rootlayout) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+     
+        <main>
+          <Header />
+
+         {children}
+        </main>
+      </body>
     </html>
   )
 }
